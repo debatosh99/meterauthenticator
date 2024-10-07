@@ -1,0 +1,51 @@
+
+Website:-
+https://nagasudhir.blogspot.com/2023/04/oauth-20-authorization-code-flow-for.html?m=1
+https://medium.com/@kalpananand.sharma/step-5-implement-api-side-access-token-validation-code-1c4494165c38
+https://docs.authlib.org/en/latest/client/oauth2.html
+https://pyjwt.readthedocs.io/en/latest/usage.html
+https://dev.to/kimmaida/signing-and-validating-json-web-tokens-jwt-for-everyone-25fb
+
+
+Download keycloak:-
+https://www.keycloak.org/downloads
+
+Virtual environment setup:-
+pip install virtualenv
+cd F:\projects\oauth\oauth-practice\oauth-venv
+python -m venv oauth-venv
+oauth-venv\Scripts\activate
+deactivate
+
+Dependency install:-
+pip install flask authlib requests PyJWT python-dotenv python-jose
+
+set java before starting keycloack server:-
+set JAVA_HOME=C:\Users\debu\devtools\openjdk-22\jdk-22.0.2
+set path=%JAVA_HOME%;%path%
+
+start keycloack server: C:\Users\debu\devtools\keycloak\keycloak-26.0.0\bin\kc.bat start-dev
+
+keycloack server : http://localhost:8080/
+
+keycloack credentials: admin & password
+
+Realm: myorg
+clientid: mywebapp
+client secret: kpUdB9LnM5DNUUlqT0nIy2WGN7HcS5TG
+client authorization code flow is selected
+username: tommy99
+user email:tom.cruise@myorg.com
+user password: password
+well known endpoint: http://localhost:8080/realms/myorg/.well-known/openid-configuration
+keycloak public key: http://localhost:8080/realms/myorg/
+jwk_url=http://localhost:8080/realms/myorg/protocol/openid-connect/certs
+
+
+base64 decode and encode:-
+echo -n 'Hello, World!' | base64
+base64 -d <<< SGVsbG8sIFdvcmxkIQo=
+
+access token of type jwt is decoded at:-
+https://jwt.io/
+

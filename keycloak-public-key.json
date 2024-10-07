@@ -1,0 +1,7 @@
+{
+  "realm": "myorg",
+  "public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsyCoX3BTJwXDRBoxd3wcochRmhbXsEoWL5oIL37gxIxja5r0McOOAKB1e2ZDVAA0l77Opz8E+b4nQYHwnYtoYNO0aTOwf8FV++QsS293nVRfiYIR8SuS1mcmD6AjBJEb4rW07QGvSMnywaP/Huk05Et0Hi8eJte1aRgp+HPCiXdfT5j3htEcYLYH527il8oKf6PdFIt3yX5hszq47N/2+sTOSNwdFyLpfxUoMr7aBOEq+ZC3tmTM8lEE04gS9TwvkUkmoxXZiT1x7lZTVi6ODO2JM1DVL3prtrNeq8VNrTnByYthVY0QQ3Z7tGHzsuGAy+u5ZFs/WRzr3mCWDo7bUwIDAQAB",
+  "token-service": "http://localhost:8080/realms/myorg/protocol/openid-connect",
+  "account-service": "http://localhost:8080/realms/myorg/account",
+  "tokens-not-before": 0
+}
